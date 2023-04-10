@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="AllResults(failed)">
+    <classes>
+      <class name="com.wa.ModifiedOnline.TestCases.VerifyAllTest">
+        <methods>
+          <include name="methodSetup"/>
+          <include name="getSearchResults"/>
+          <include name="commonTeardown"/>
+          <include name="commonSetup"/>
+          <include name="setExcelFile"/>
+        </methods>
+      </class> <!-- com.wa.ModifiedOnline.TestCases.VerifyAllTest -->
+    </classes>
+  </test> <!-- AllResults(failed) -->
+</suite> <!-- Failed suite [Suite] -->
