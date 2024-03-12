@@ -18,13 +18,13 @@ public class NavBar extends BaseClass {
 	private String Logout_Button = "by.xpath=>//a[@class='dropdown-item header-links'][normalize-space()='Logout']";
 	private String My_Account_Logo = "by.cssSelector=>a[class='nav-link nav-profile-link dropdown-toggle'] img[class='rounded-circle']";
 	private String Logout_Popup = "by.cssSelector=>.swal2-confirm.swal2-styled";
-	private String Login_Link = "by.xpath=>//a[@class='header-links'][normalize-space()='Login']";
+	private String Login_Link = "by.xpath=>//div[@class='authentication d-none d-md-block'] //a[contains(text(),'Login')]";
 	private String Signup_Link = "by.cssSelector=>div[class='authentication d-none d-md-block'] li:nth-child(1) a:nth-child(1)";
 	private String Job_Link = "by.xpath=>//a[@class='header-links'][normalize-space()='Jobs']";
 	private String HomePage_Link = "by.cssSelector=>img[alt='logo']";
 
 	public LoginPage gotoLogin() {
-		waitForElementToVisible(Login_Link, 2, "login link displayed");
+		waitforElementToClickable(Login_Link, 3, "login link displayed");
 
 		elementClick(Login_Link, "clicked on login");
 		return new LoginPage(driver);

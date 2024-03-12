@@ -35,7 +35,8 @@ public class StepDefinitionLogin extends BaseTest {
 
 	@Given("open website click on Login link")
 	public void open_website_click_on_log_in_link() {
-		loginPage = commonSetup("chrome");
+		loginPage =commonSetup("chrome");
+		loginPage.loginwithEmail();
 	}
 
 	@Then("^login using username (.*) and password (.*)$")

@@ -23,6 +23,8 @@ public class WebDriverFactory {
 	public static final Logger log = LogManager.getLogger(WebDriverFactory.class.getName());
 
 	private static final WebDriverFactory instance = new WebDriverFactory();
+	
+	private static ThreadLocal<String> thrededbrows = new ThreadLocal<>(); 
 
 	private WebDriverFactory() {
 
@@ -38,6 +40,7 @@ public class WebDriverFactory {
 
 		WebDriver driver = null;
 		setDriver(browser);
+		thrededbrows.set(browser);
 		if (threadedDriver.get() == null) {
 			try {
 
@@ -112,5 +115,10 @@ public class WebDriverFactory {
 		firefoxOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		return firefoxOptions;
 
+	}
+
+	public String getBrowser() {
+		// TODO Auto-generated method stub
+		return thrededbrows.get();
 	}
 }

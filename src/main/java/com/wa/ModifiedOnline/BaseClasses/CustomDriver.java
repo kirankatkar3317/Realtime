@@ -36,7 +36,6 @@ public class CustomDriver {
 	public CustomDriver(WebDriver driver) {
 		js = (JavascriptExecutor) driver;
 		this.driver = driver;
-
 	}
 
 	public void refresh() {
@@ -525,11 +524,11 @@ public class CustomDriver {
 		try {
 			File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screenshot, new File(path));
-			System.out.println("screenshot is saved at ::"+path);
+			System.out.println("screenshot is saved at ::" + path);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-return path;
+		return path;
 	}
 
 }

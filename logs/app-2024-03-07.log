@@ -1,0 +1,20 @@
+17:46:51.863 DEBUG handler.HttpHandler -
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a726be3c82b702618222f26f77e572f2/element/f.EA7667EC6AA3B406AE2F807039489046.d.A468369A54999C1BE5A4385046231948.e.19/click HTTP/1.1
+User-Agent: selenium/4.7.2 (java windows)
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+host: localhost:12295
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+17:46:51.876 DEBUG channel.ChannelManager -Adding key: http://localhost:12295 for channel [id: 0x1a6ee744, L:/127.0.0.1:52005 - R:localhost/127.0.0.1:12295]
+17:46:51.877 TRACE logging.LoggingHandler -[id: 0x1a6ee744, L:/127.0.0.1:52005 - R:localhost/127.0.0.1:12295] READ COMPLETE
+17:46:52.438 DEBUG channel.DefaultChannelPool -Entry count for : http://localhost:52006 : 1
+17:46:52.438 DEBUG channel.DefaultChannelPool -Entry count for : http://localhost:12295 : 1

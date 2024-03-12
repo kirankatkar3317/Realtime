@@ -2,17 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="AllResults(failed)">
+  <test thread-count="5" name="LogInOutTest(failed)">
     <classes>
-      <class name="com.wa.ModifiedOnline.TestCases.VerifyAllTest">
+      <class name="com.wa.ModifiedOnline.TestCases.LogInOutTest">
         <methods>
+          <include name="validLoginTest"/>
           <include name="methodSetup"/>
-          <include name="getSearchResults"/>
+          <include name="setExcelFile"/>
+          <include name="validLogutTest"/>
           <include name="commonTeardown"/>
           <include name="commonSetup"/>
-          <include name="setExcelFile"/>
         </methods>
-      </class> <!-- com.wa.ModifiedOnline.TestCases.VerifyAllTest -->
+      </class> <!-- com.wa.ModifiedOnline.TestCases.LogInOutTest -->
     </classes>
-  </test> <!-- AllResults(failed) -->
+  </test> <!-- LogInOutTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

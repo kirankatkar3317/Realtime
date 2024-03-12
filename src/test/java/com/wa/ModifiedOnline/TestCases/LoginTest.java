@@ -11,7 +11,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test
 	public void validLoginTest() {
-		navBar = loginpage.login("kirankatkar3317@gmail.com", "Kiran@3317");
+		navBar = loginPage.login("kirankatkar3317@gmail.com", "Kiran@3317");
 		boolean result = navBar.verifyJobLinkDisplayed();
 		Assert.assertTrue(result);
 		boolean result1 = navBar.accountLogoCheck();
@@ -21,8 +21,8 @@ public class LoginTest extends BaseTest {
 	@Test
 	public void invalidLoginTest() {
 
-	//	loginpage.loginwithEmail();
-		navBar = loginpage.login("kirankatkar3318@gmail.com", "Kiran@3318");
+	//	loginPage.loginwithEmail();
+		navBar = loginPage.login("kirankatkar3318@gmail.com", "Kiran@3318");
 		boolean result = navBar.accountLogoCheck();
 		Assert.assertFalse(result);
 	}

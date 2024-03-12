@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 7, Errors: 0, Skipped: 19, Time elapsed: 32.493 s <<< FAILURE! - in TestSuite
+commonSetup(com.wa.ModifiedOnline.TestCases.LogInOutTest)  Time elapsed: 1.916 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method commonSetup but has not been marked @Optional or defined
+
+
+validLoginTest(com.wa.ModifiedOnline.TestCases.LogInOutTest)  Time elapsed: 1.953 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Data Provider public java.lang.Object[][] com.wa.ModifiedOnline.TestCases.LogInOutTest.getLoginTestData() returned a null value
+
+commonSetup(com.wa.ModifiedOnline.TestCases.LoginTest)  Time elapsed: 0.004 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method commonSetup but has not been marked @Optional or defined
+
+
+commonSetup(com.wa.ModifiedOnline.TestCases.LogoutTest)  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method commonSetup but has not been marked @Optional or defined
+
+
+commonSetup(com.wa.ModifiedOnline.TestCases.VerifyAllTest)  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method commonSetup but has not been marked @Optional or defined
+
+
+validLoginTest(com.wa.ModifiedOnline.TestCases.VerifyAllTest)  Time elapsed: 0.007 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Data Provider public java.lang.Object[][] com.wa.ModifiedOnline.TestCases.VerifyAllTest.getLoginTestData() returned a null value
+
+runScenario(Cucumber.TestRunner)  Time elapsed: 29.543 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.wa.ModifiedOnline.TestClasses.LoginPage.login(String, String)" because "this.loginPage" is null
+

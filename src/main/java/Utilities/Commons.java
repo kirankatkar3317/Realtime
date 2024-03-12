@@ -6,7 +6,9 @@ public class Commons {
 
 	public static final String BASE_PATH = System.getProperty("user.dir");
 
-	public static final String EXCEL_PATH = Commons.BASE_PATH + "\\Resources\\Exceldriven1.xlsx";
+	public static final String EXCEL_PATH_EXCELDRIVEN = Commons.BASE_PATH + "//Resources//Exceldriven.xlsx";
+
+	public static final String EXCEL_PATH_BOOK1 = Commons.BASE_PATH + "//Resources//Book1.xlsx";
 
 	public static final String CHROME = "chrome";
 
@@ -32,9 +34,11 @@ public class Commons {
 
 	public static final String LOGINTEST_TABLENAME = "Verifyloginout";
 	
+	public static final String LOGINTEST_TABLENAME1 = "kk";
+	
 	public static final String LOGINTESTWITHALLTESTS_TABLENAME = "Verifyloginoutwithalltests";
 	
-	public static final String DRIVER_DIRECTORY = "\\drivers\\";
+	public static final String DRIVER_DIRECTORY = "//drivers//";
 	
 	public static final String reportsDirectory = Commons.BASE_PATH + "//reports//";
 }

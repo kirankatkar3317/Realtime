@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import Utilities.Commons;
 
-public class ExcelUtility {
+public class ExcelUtility1 {
 
 	public static void main(String[] args){
 
@@ -17,7 +17,7 @@ public class ExcelUtility {
 		XSSFCell excelCell;
 
 		String sheetName = "Sheet1";
-		String path = Commons.BASE_PATH + Commons.EXCEL_PATH;
+		String path = Commons.EXCEL_PATH_EXCELDRIVEN;
 		try {
 			FileInputStream excelFile = new FileInputStream(path);
 				excelWorkbook = new XSSFWorkbook(excelFile);
@@ -31,3 +31,5 @@ public class ExcelUtility {
 		}
 	}
 }
+
+

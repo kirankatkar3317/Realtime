@@ -24,13 +24,13 @@ public class VerifyAllTest extends BaseTest {
 
 	@BeforeClass
 	public void setExcelFile() throws IOException {
-		ExcelUtility.getExcelFile(Commons.EXCEL_PATH, Commons.SHEET_3);
+		ExcelUtility.getExcelFile(Commons.EXCEL_PATH_EXCELDRIVEN, Commons.SHEET_3);
 		
 	}
 
 	@Test(dataProvider = "getLoginTestData", priority=1)
 	public void validLoginTest(String email, String password) {
-		loginpage.login(email, password);
+		loginPage.login(email, password);
 		Assert.assertTrue(navBar.accountLogoCheck());
 
 	}

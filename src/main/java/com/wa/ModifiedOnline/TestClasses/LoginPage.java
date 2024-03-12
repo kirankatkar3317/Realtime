@@ -13,15 +13,13 @@ public class LoginPage extends BaseClass {
 		this.driver = driver;
 	}
 
-	private String Email_Textbox = "by.cssSelector=>input[placeholder='Your email']";
-	private String Password_Textbox = "by.cssSelector=>input[placeholder='Password']";
+	private String Email_Textbox = "by.cssSelector=>input[placeholder='Enter Email']";
+	private String Password_Textbox = "by.cssSelector=>input[placeholder='Enter Password']";
 	private String Login_Button = "by.cssSelector=>button[type='submit']";
-	private String Login_With_Email = "by.cssSelector=>span[class='form-btn']";
+	private String Login_With_Email = "by.xpath=>//span[contains(text(),'Login with Email')]";
 
 	public void loginwithEmail() {
 
-		
-		
 		elementClick(Login_With_Email, "click on login with email");
 	}
 
@@ -29,6 +27,7 @@ public class LoginPage extends BaseClass {
 
 //		WebElement mailTextBox = driver.findElement(By.cssSelector(Email_Textbox));
 //		mailTextBox.sendKeys(email);
+
 		
 		sendData(Email_Textbox, email, "email ");
 
