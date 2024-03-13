@@ -41,7 +41,7 @@ public class BaseTest {
 		driver.get(Commons.BASE_URL);
 		navBar = new NavBar(driver);
 		loginPage = navBar.gotoLogin();
-		
+		loginPage.loginwithEmail();
 
 		
 		//		loginPage = navBar.gotoLogin();
