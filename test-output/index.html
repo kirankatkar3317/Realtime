@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\kikatkar\git\testng_Realtime\testng_Realtime\Simplellogin.xml</span>
+                    <span>C:\Users\kikatkar\git\testng_Realtime\testng_Realtime\DatadrivenTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.wa.ModifiedOnline.TestCases.TestRandom" class="method navigator-link" hash-for-method="LoginDatadriven(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)">LoginDatadriven(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.wa.ModifiedOnline.TestCases.TestRandom" class="method navigator-link" hash-for-method="LoginDatadriven(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)">LoginDatadriven(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.wa.ModifiedOnline.TestCases.SimpleLogin" class="method navigator-link" hash-for-method="simpleLogin">simpleLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.wa.ModifiedOnline.TestCases.TestRandom" class="method navigator-link" hash-for-method="LoginDatadriven(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893)">LoginDatadriven(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,17 +138,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.wa.ModifiedOnline.TestCases.SimpleLogin</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.wa.ModifiedOnline.TestCases.TestRandom</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="simpleLogin">
-                  </a> <!-- simpleLogin -->
-                  <span class="method-name">simpleLogin</span>
+                  <a name="LoginDatadriven(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)">
+                  </a> <!-- LoginDatadriven(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893) -->
+                  <span class="method-name">LoginDatadriven</span>
+                  <span class="parameters">(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.wa.ModifiedOnline.TestCases.TestRandom.LoginDatadriven(TestRandom.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDatadriven(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)">
+                  </a> <!-- LoginDatadriven(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893) -->
+                  <span class="method-name">LoginDatadriven</span>
+                  <span class="parameters">(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.wa.ModifiedOnline.TestCases.TestRandom.LoginDatadriven(TestRandom.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.wa.ModifiedOnline.TestCases.TestRandom</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDatadriven(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893)">
+                  </a> <!-- LoginDatadriven(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893) -->
+                  <span class="method-name">LoginDatadriven</span>
+                  <span class="parameters">(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +191,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kikatkar\git\testng_Realtime\testng_Realtime\Simplellogin.xml</span>
+            <span class="header-content">C:\Users\kikatkar\git\testng_Realtime\testng_Realtime\DatadrivenTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +202,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.wa.ModifiedOnline.BaseTestCases.TestListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SimpleLogin&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestRandom&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.wa.ModifiedOnline.TestCases.SimpleLogin&quot;/&gt;
+      &lt;class name=&quot;com.wa.ModifiedOnline.TestCases.TestRandom&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SimpleLogin --&gt;
+  &lt;/test&gt; &lt;!-- TestRandom --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +218,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SimpleLogin (1 class)</span>
+                <span class="test-name">TestRandom (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,16 +244,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'simpleLogin')
-data.setCell(0, 2, 'com.wa.ModifiedOnline.TestCases.SimpleLogin')
-data.setCell(0, 3, 2317);
+data.setCell(0, 1, 'LoginDatadriven')
+data.setCell(0, 2, 'com.wa.ModifiedOnline.TestCases.TestRandom')
+data.setCell(0, 3, 6458);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginDatadriven')
+data.setCell(1, 2, 'com.wa.ModifiedOnline.TestCases.TestRandom')
+data.setCell(1, 3, 6412);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginDatadriven')
+data.setCell(2, 2, 'com.wa.ModifiedOnline.TestCases.TestRandom')
+data.setCell(2, 3, 2107);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,22 +287,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.wa.ModifiedOnline.TestCases.SimpleLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.wa.ModifiedOnline.TestCases.TestRandom</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">commonSetup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodSetup</span>
-                <span class="method-start">20005 ms</span>
+                <span class="method-start">56010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">simpleLogin</span>
-                <span class="method-start">20008 ms</span>
+                <span class="method-name">LoginDatadriven(1010, testuser1, Rohan, Sharma, kirankatkar3317@gmail.com, Kiran@3317, 1234567893)</span>
+                <span class="method-start">56015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodSetup</span>
+                <span class="method-start">58134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginDatadriven(1020, testuser2, Mohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</span>
+                <span class="method-start">58134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodSetup</span>
+                <span class="method-start">64933 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginDatadriven(1030, testuser3, Sohan, Sharma, kirankatkar3318@gmail.com, Kiran@3318, 1234567893)</span>
+                <span class="method-start">64933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">commonTeardown</span>
-                <span class="method-start">22340 ms</span>
+                <span class="method-start">71761 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

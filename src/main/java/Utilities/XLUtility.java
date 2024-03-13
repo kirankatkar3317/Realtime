@@ -27,6 +27,7 @@ public class XLUtility {
 	
 	public XLUtility(String path)
 	{
+		super();
 		this.path=path;
 	}
 		

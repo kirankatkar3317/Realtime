@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.wa.ModifiedOnline.BaseTestCases.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="TestRandom(failed)">
     <classes>
-      <class name="com.wa.ModifiedOnline.TestCases.SimpleLogin">
+      <class name="com.wa.ModifiedOnline.TestCases.TestRandom">
         <methods>
+          <include name="LoginDatadriven" invocation-numbers="1 2"/>
           <include name="methodSetup"/>
-          <include name="simpleLogin"/>
           <include name="commonTeardown"/>
           <include name="commonSetup"/>
         </methods>
-      </class> <!-- com.wa.ModifiedOnline.TestCases.SimpleLogin -->
+      </class> <!-- com.wa.ModifiedOnline.TestCases.TestRandom -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestRandom(failed) -->
+</suite> <!-- Failed suite [Suite] -->

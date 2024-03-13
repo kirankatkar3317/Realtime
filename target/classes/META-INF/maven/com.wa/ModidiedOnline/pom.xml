@@ -15,12 +15,82 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
+	<profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>DatadrivenTest.xml</suiteXmlFile>
+								</suiteXmlFiles>
+								<!-- put your configurations here -->
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
+		<profile>
+			<id>Unit</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>SimpleloginTest.xml</suiteXmlFile>
+								</suiteXmlFiles>
+								<!-- put your configurations here -->
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		</profiles>
+
+
+
+
+
+
 
 	<build>
 		<pluginManagement>
-			<!-- lock down plugins versions to avoid using Maven defaults (may
-			be moved to parent pom) -->
+
 			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.5</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>SimpleloginTest.xml</suiteXmlFile>
+						</suiteXmlFiles>
+
+						<!-- put your configurations here -->
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.12.1</version>
+				</plugin>
+				<!-- lock down plugins versions to avoid using Maven defaults
+				(may
+			be moved to parent pom) -->
 				<!-- clean lifecycle, see
 				https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
@@ -33,14 +103,14 @@
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
 				</plugin>
-				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.0</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.1</version>
-				</plugin>
+				<!--				<plugin>-->
+				<!--					<artifactId>maven-compiler-plugin</artifactId>-->
+				<!--					<version>3.12.1</version>-->
+				<!--				</plugin>-->
+				<!--			<plugin>-->
+				<!--				<artifactId>maven-surefire-plugin</artifactId>-->
+				<!--				<version>2.22.1</version>-->
+				<!--			</plugin>-->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.0.2</version>
@@ -86,11 +156,6 @@
 			<version>4.7.2</version>
 		</dependency>
 
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.14.0</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -221,7 +286,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.11.0</version>
+			<version>2.14.0</version>
 		</dependency>
 
 

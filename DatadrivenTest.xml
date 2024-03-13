@@ -6,9 +6,9 @@
 		</listener>
 	</listeners>
 <parameter name="browser" value="chrome"></parameter>
-  <test thread-count="5" name="DataDrivenTests">
+  <test thread-count="5" name="TestRandom">
     <classes>
-      <class name="com.wa.ModifiedOnline.TestCases.DataDrivenTests"/>
+      <class name="com.wa.ModifiedOnline.TestCases.TestRandom"/>
 
     </classes>
   </test> <!-- Test -->

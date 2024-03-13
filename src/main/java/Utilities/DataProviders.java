@@ -16,7 +16,7 @@ public class DataProviders {
 		{
 			String path=System.getProperty("user.dir")+"//Resources//UserTestData.xlsx";
 			//System.out.println(path);
-			XLUtility xl=new XLUtility(path);
+			XLUtility xl = new XLUtility(path);
 		
 			int rownum=xl.getRowCount("Sheet1");	
 			int colcount=xl.getCellCount("Sheet1",1);
