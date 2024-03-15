@@ -9,37 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">AllResults</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,290</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestRandom</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,663</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllResults &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.wa.ModifiedOnline.TestCases.VerifyAllTest</td><td><a href="#m0">getSearchResults</a></td><td rowspan="1">1710348622290</td><td rowspan="1">3616</td></tr><tr class="failedeven"><td><a href="#m1">validLoginTest</a></td><td rowspan="1">1710348622258</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestRandom &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.wa.ModifiedOnline.TestCases.TestRandom</td><td><a href="#m0">LoginDatadriven</a></td><td rowspan="1">1710486412617</td><td rowspan="1">6360</td></tr><tr><th colspan="4">TestRandom &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.wa.ModifiedOnline.TestCases.TestRandom</td><td><a href="#m1">InvalidLoginDatadriven</a></td><td rowspan="2">1710486419619</td><td rowspan="2">3301</td></tr><tr class="passedeven"><td><a href="#m2">InvalidLoginDatadriven</a></td></tr><tr class="passedeven"><td><a href="#m3">LoginDatadriven</a></td><td rowspan="3">1710486408717</td><td rowspan="3">1944</td></tr><tr class="passedeven"><td><a href="#m4">LoginDatadriven</a></td></tr><tr class="passedeven"><td><a href="#m5">LoginDatadriven</a></td></tr></tbody>
 </table>
-<h2>AllResults</h2><h3 id="m0">com.wa.ModifiedOnline.TestCases.VerifyAllTest#getSearchResults</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [78baedd32f7ce1543961f5228ac280f7, getElementText {id=f.239E40FE7F08D8EEB6B2F562CD90DD70.d.DE8EA597E68627EFA5A1BC7E7BBB54B9.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\kikatkar\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52934/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (78baedd32f7ce1543961f5228ac280f7)] -&gt; css selector: span[class= &apos;ng-option-label&apos;]]
-Session ID: 78baedd32f7ce1543961f5228ac280f7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at com.wa.ModifiedOnline.BaseClasses.CustomDriver.getText(CustomDriver.java:281)
-	at com.wa.ModifiedOnline.TestClasses.FilterPage.selectfromCompanyDropdown(FilterPage.java:60)
-	at com.wa.ModifiedOnline.TestCases.VerifyAllTest.getSearchResults(VerifyAllTest.java:44)
+<h2>TestRandom</h2><h3 id="m0">com.wa.ModifiedOnline.TestCases.TestRandom#LoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1014</td><td>testusr</td><td>kiran</td><td>katkar</td><td>kirankatkar3318@gmail.com</td><td>Kiran@3318</td><td>7328832329</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.wa.ModifiedOnline.TestCases.TestRandom.LoginDatadriven(TestRandom.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.wa.ModifiedOnline.TestCases.VerifyAllTest#validLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Data Provider public java.lang.Object[][] com.wa.ModifiedOnline.TestCases.VerifyAllTest.getLoginTestData() returned a null value
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.wa.ModifiedOnline.TestCases.TestRandom#InvalidLoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1020</td><td>testuser2</td><td>Mohan</td><td>Sharma</td><td>kirankatkar3318@gmail.com</td><td>Kiran@3318</td><td>1234567893</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.wa.ModifiedOnline.TestCases.TestRandom#InvalidLoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1030</td><td>testuser3</td><td>Sohan</td><td>Sharma</td><td>kirankatkar3318@gmail.com</td><td>Kiran@3318</td><td>1234567893</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.wa.ModifiedOnline.TestCases.TestRandom#LoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1011</td><td>testuser2</td><td>aniket</td><td>varma</td><td>sakiran2230@gmail.com</td><td>Kiran@2230</td><td>21343113134</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.wa.ModifiedOnline.TestCases.TestRandom#LoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1013</td><td>testuser3</td><td>abhi</td><td>katkar</td><td>kiran.akatkar3317@gmail.com</td><td>Kiran@9103</td><td>1234567893</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.wa.ModifiedOnline.TestCases.TestRandom#LoginDatadriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1010</td><td>testuser1</td><td>Rohan</td><td>Sharma</td><td>kirankatkar3317@gmail.com</td><td>Kiran@3317</td><td>1234567893</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

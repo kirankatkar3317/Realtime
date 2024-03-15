@@ -9,7 +9,7 @@
     <classes>
       <class name="com.wa.ModifiedOnline.TestCases.TestRandom">
         <methods>
-          <include name="LoginDatadriven" invocation-numbers="1 2"/>
+          <include name="LoginDatadriven" invocation-numbers="3"/>
           <include name="methodSetup"/>
           <include name="commonTeardown"/>
           <include name="commonSetup"/>

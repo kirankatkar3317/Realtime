@@ -12,6 +12,7 @@ import com.wa.ModifiedOnline.TestClasses.HomePage;
 import com.wa.ModifiedOnline.TestClasses.LoginPage;
 //import com.wa.ModifiedOnline.TestClasses.loginPage;
 import com.wa.ModifiedOnline.TestClasses.NavBar;
+import com.wa.ModifiedOnline.TestClasses.ResultPage;
 import com.wa.ModifiedOnline.TestClasses.SearchPage;
 
 import Utilities.Commons;
@@ -29,6 +30,8 @@ public class BaseTest {
 	protected NavBar navBar;
 	protected SearchPage searchpage;
 	protected FilterPage filterPage;
+	protected ResultPage resultPage;
+
 
 	@BeforeClass 
 	@Parameters({ "browser" })

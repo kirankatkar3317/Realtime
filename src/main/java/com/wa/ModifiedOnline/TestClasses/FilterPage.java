@@ -27,7 +27,7 @@ public class FilterPage extends BaseClass {
 	private String Filter_Notapplied_Button = "By.css=>div[class='col-12 p-4 filters'] li:nth-child(1)";
 	private String Filter_Company_Dropdown = "By.xpath=>//ng-select[@placeholder='Company']//input[@role='combobox']";
 	private String Filter_Category_Dropdown = "By.xpath=>/html[1]/body[1]/app-root[1]/app-wrapper[1]/div[1]/main[1]/app-job-listing[1]/div[1]/app-filters[1]/div[1]/div[1]/div[3]/div[1]/div[2]/form[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]";
-	private String Filter_Apply_Button = "By.css=>button[fdprocessedid='tuxvn']";
+	private String Filter_Apply_Button = "By.css=>button[class='action-button action-button-apply']";
 	private String Filter_Clear_Button = "By.css=>button[fdprocessedid= 'aqit1e']";
 	private String Company_Dropdown_options = "By.css=>span[class= 'ng-option-label']";
 	private String Category_Dropdown_options = "By.css=>.ng-option-label";

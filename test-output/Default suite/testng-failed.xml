@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.wa.ModifiedOnline.TestCases.SimpleLogin">
+      <class name="com.wa.ModifiedOnline.TestCases.VerifyAllTest">
         <methods>
           <include name="methodSetup"/>
-          <include name="simpleLogin"/>
+          <include name="getSearchResults"/>
           <include name="commonTeardown"/>
           <include name="commonSetup"/>
+          <include name="setExcelFile"/>
         </methods>
-      </class> <!-- com.wa.ModifiedOnline.TestCases.SimpleLogin -->
+      </class> <!-- com.wa.ModifiedOnline.TestCases.VerifyAllTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

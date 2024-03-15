@@ -73,6 +73,19 @@ public class NavBar extends BaseClass {
 		return false;
 	}
 
+	public boolean accountLogoCheck1() {
+		try {
+			if (isDisplayed(My_Account_Logo, "account logo displayed")) {
+				return true;
+			}
+		} catch (Exception e) {
+			System.out.println("account logo not dispalyed");
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	
 	public void clickOnLogo() {
 		elementClick(My_Account_Logo,  "click on my account logo");
 	}
